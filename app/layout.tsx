@@ -9,13 +9,15 @@ const inter = Inter({ subsets: ['latin'] })
 const lol = Plus_Jakarta_Sans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'QWERTY',
+  title: 'qwerty',
   description: 'QWERTY',
 }
 
 export default function RootLayout({
   children,
 }: {
+
+
   children: React.ReactNode
 }) {
   return (

@@ -26,14 +26,12 @@ const NavBar = () => {
                             >
                                 <Image
 
-                                    src="/wave.PNG"
+                                    src="/logoqwerty.png"
                                     alt=""
                                     width={35}
                                     height={35}
 
                                 />
-                                <span className={lol.className} >
-                                    StartUppers</span>
                             </a>
                             <button
                                 onClick={() => setIsOpen(!isOpen)}
@@ -70,29 +68,21 @@ const NavBar = () => {
                             <ul className="space-y-2 list-none text-sm text-white md:space-y-0 md:ml-auto items-center md:inline-flex justify-center text-center md:text-left gap-3 lg:gap-6">
                                 <li>
                                     <a href="#ecosystem" className="hover:text-accent-400">
-                                        EcoSystem
+                                        Services
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#projects" className="hover:text-accent-400">
-                                        Projects
+                                        Team
                                     </a>
                                 </li>
 
                                 <li>
                                     <a href="#segments" className="hover:text-accent-400">
-                                        Segments
+                                        Contact
                                     </a>
                                 </li>
 
-                                <li>
-                                    <a
-                                        href="https://calendly.com/brandaob/42"
-                                        className="text-sm py-2 w-auto px-4 border h-8 focus:ring-2 rounded-full border-transparent bg-white/5 hover:bg-transparent text-white duration-200 focus:ring-offset-2 focus:ring-white hover:text-white inline-flex items-center justify-center ring-1 ring-white/10"
-                                    >
-                                        Get Started
-                                    </a>
-                                </li>
                             </ul>
                         </nav>
                     </div>

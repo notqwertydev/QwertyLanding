@@ -8,14 +8,14 @@ const Ecosystem = () => {
             <div className="mx-auto 2xl:max-w-7xl py-12 lg:px-16 md:px-12 px-8 xl:px-36 items-center">
                 <div className="relative isolate lg:flex-col overflow-hidden bg-gradientdown ring-1 ring-white/10 rounded-3xl px-6 p-10 lg:flex lg:p-20">
                     <div className="max-w-xl">
-                        <span className="text-blue-400">EcoSystem</span>
+                        <span className="text-blue-400">Services</span>
                         <h2 className="text-3xl tracking-tighter mt-6 font-light lg:text-4xl text-white">
-                            You want to meet  <span className="text-zinc-400">Investors and Operating Partners</span>
+                            What we do? 
                         </h2>
                     </div>
 
                     <div className="mt-24">
-                        <span className="text-white">Investors</span>
+                        <span className="text-white">Development</span>
                     </div>
 
                     <div className="pt-12 border-t border-white/10 mt-6">
