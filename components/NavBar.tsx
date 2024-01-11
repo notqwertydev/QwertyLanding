@@ -14,6 +14,7 @@ const NavBar = () => {
         <div className="fixed top-4 inset-x-0 z-50">
             <div className="lg:max-w-2xl mx-auto px-8">
                 <div className="w-full mx-auto">
+                    
                     <div
                         className="relative flex flex-col w-full p-3 mx-auto bg-black/70 ring-1 ring-inset ring-white/10 shadow-thick backdrop-blur-xl backdrop-filter rounded-xl md:rounded-full md:items-center md:justify-between md:flex-row"
                     >
