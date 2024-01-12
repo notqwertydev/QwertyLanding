@@ -35,7 +35,7 @@ export default function RootLayout({
         <div className='bg-[#0f1014] flex flex-col min-h-screen mx-auto 2xl:max-w-screen-3xl'>
 
           <NavBar />
-          <div className='px-8'>
+          <div className='px-0'>
             {children}
           </div>
         </div>
