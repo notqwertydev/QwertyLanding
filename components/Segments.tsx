@@ -1,5 +1,6 @@
 "use client"
 import React, { useRef, useState } from 'react';
+import { FileCode, Package, TabletSmartphone, CircleDollarSign, BrainCircuit, Link } from 'lucide-react';
 import Image from 'next/image';
 const Segments = () => {
 
@@ -32,11 +33,16 @@ const Segments = () => {
                                 <Image src="/business.png" alt="Feature 1" width={500} height={500} />
                             </div> */}
                             <div className="flex flex-col gap-2 p-4">
-                                <p className="text-lg text-white font-display lg:text-xl">
-                                    Website
-                                </p>
+
+                                <div className='text-white flex gap-2'>
+                                    <FileCode />
+                                    <p className="text-lg text-white font-display lg:text-xl">
+
+                                        Website
+                                    </p>
+                                </div>
                                 <p className="text-sm text-vanta-300">
-                                Web solutions that connect.<br /> Our web development services focus on creating responsive, high-performance websites. From user-friendly interfaces to cutting-edge web applications, we ensure a seamless digital experience for all users.<br />
+                                    Web solutions that connect.<br /> Our web development services focus on creating responsive, high-performance websites. From user-friendly interfaces to cutting-edge web applications, we ensure a seamless digital experience for all users.<br />
 
                                 </p>
                             </div>
@@ -50,11 +56,14 @@ const Segments = () => {
                                 <Image src="/funds.png" alt="Feature 2" width={500} height={500} />
                             </div> */}
                             <div className="flex flex-col gap-2 p-4">
-                                <p className="text-lg text-white font-display lg:text-xl">
-                                    Application
-                                </p>
+                                <div className='text-white flex gap-2'>
+                                    <TabletSmartphone />
+                                    <p className="text-lg text-white font-display lg:text-xl">
+                                        Application
+                                    </p>
+                                </div>
                                 <p className="text-sm text-vanta-300">
-                                Your vision, now mobile.<br />We craft custom mobile applications that empower users on-the-go. Our apps boast sleek design and robust performance, tailored for iOS and Android platforms, turning your vision into a pocket-sized reality<br />
+                                    Your vision, now mobile.<br />We craft custom mobile applications that empower users on-the-go. Our apps boast sleek design and robust performance, tailored for iOS and Android platforms, turning your vision into a pocket-sized reality<br />
 
                                 </p>
                             </div>
@@ -85,11 +94,14 @@ const Segments = () => {
                                 <Image src="/legal.png" alt="Feature 4" width={500} height={500} />
                             </div> */}
                             <div className="flex flex-col gap-2 p-4">
-                                <p className="text-lg text-white font-display lg:text-xl">
-                                    Software
-                                </p>
+                                <div className='text-white flex gap-2'>
+                                    <Package />
+                                    <p className="text-lg text-white font-display lg:text-xl">
+                                        Software
+                                    </p>
+                                </div>
                                 <p className="text-sm text-vanta-300">
-                                Software tailored for impact.<br /> We specialize in developing software solutions that drive business growth. Our team designs and builds scalable, secure, and efficient software tailored to meet your unique business challenges.<br />
+                                    Software tailored for impact.<br /> We specialize in developing software solutions that drive business growth. Our team designs and builds scalable, secure, and efficient software tailored to meet your unique business challenges.<br />
 
                                 </p>
                             </div>
@@ -103,11 +115,14 @@ const Segments = () => {
                                 <Image src="/tech.png" alt="Feature 5" width={500} height={500} />
                             </div> */}
                             <div className="flex flex-col gap-2 p-4">
-                                <p className="text-lg text-white font-display lg:text-xl">
-                                    E-commerce Platforms
-                                </p>
+                                <div className='text-white flex gap-2'>
+                                    <CircleDollarSign />
+                                    <p className="text-lg text-white font-display lg:text-xl">
+                                        E-commerce Platforms
+                                    </p>
+                                </div>
                                 <p className="text-sm text-vanta-300">
-                                Streamline your e-commerce success.<br /> Elevate your online retail with our e-commerce development services. We provide comprehensive platforms that offer seamless shopping experiences, complete with custom features to enhance user engagement and sales<br />
+                                    Streamline your e-commerce success.<br /> Elevate your online retail with our e-commerce development services. We provide comprehensive platforms that offer seamless shopping experiences, complete with custom features to enhance user engagement and sales<br />
 
                                 </p>
                             </div>
@@ -121,11 +136,14 @@ const Segments = () => {
                                 <Image src="/graphic.png" alt="Feature 4" width={500} height={500} />
                             </div> */}
                             <div className="flex flex-col gap-2 p-4">
-                                <p className="text-lg text-white font-display lg:text-xl">
-                                    Blockchain Development
-                                </p>
+                                <div className='text-white flex gap-2'>
+                                    <Link />
+                                    <p className="text-lg text-white font-display lg:text-xl">
+                                        Blockchain Development
+                                    </p>
+                                </div>
                                 <p className="text-sm text-vanta-300">
-                                Blockchain for trust.<br /> Leverage the power of blockchain with our development expertise. We create secure, decentralized applications that enhance transparency and efficiency, revolutionizing how your business operates and transfers value.<br />
+                                    Blockchain for trust.<br /> Leverage the power of blockchain with our development expertise. We create secure, decentralized applications that enhance transparency and efficiency, revolutionizing how your business operates and transfers value.<br />
 
                                 </p>
                             </div>
@@ -139,11 +157,14 @@ const Segments = () => {
                                 <Image src="/marketing.png" alt="Feature 5" width={500} height={500} />
                             </div> */}
                             <div className="flex flex-col gap-2 p-4">
-                                <p className="text-lg text-white font-display lg:text-xl">
-                                    AI Development
-                                </p>
+                                <div className='text-white flex gap-2'>
+                                    <BrainCircuit />
+                                    <p className="text-lg text-white font-display lg:text-xl">
+                                        AI Development
+                                    </p>
+                                </div>
                                 <p className="text-sm text-vanta-300">
-                                Innovate with AI.<br /> Embrace the future with our AI development services. From machine learning models to intelligent automation, we harness the power of AI to provide innovative solutions that transform your business operations.<br />
+                                    Innovate with AI.<br /> Embrace the future with our AI development services. From machine learning models to intelligent automation, we harness the power of AI to provide innovative solutions that transform your business operations.<br />
 
                                 </p>
                             </div>

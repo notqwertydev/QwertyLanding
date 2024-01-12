@@ -3,7 +3,7 @@ import React from 'react';
 const FeaturesSection = () => {
     return (
         <section className="p-8">
-            <div className="mx-auto 2xl:max-w-7xl py-24 items-center lg:py-24 relative w-full bg-gradientdown rounded-[3rem]">
+            <div className="mx-auto py-24 items-center lg:py-24 relative w-full bg-gradientdown rounded-[3rem]">
                 <div className="text-center max-w-xl md:mx-auto">
                     <h2 className="text-3xl tracking-tighter font-light lg:text-4xl text-white">
                         Understanding the value of specialized skills and knowledge{' '}

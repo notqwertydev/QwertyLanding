@@ -6,8 +6,8 @@ import { Mail, MapPin } from "lucide-react";
 const HeroSection = () => {
     return (
         <section className="lg:p-8 overflow-hidden">
-            <div className="mx-auto 2xl:max-w-7xl py-24 lg:px-16 md:px-12 px-8 xl:px-40 items-center lg:py-40 w-full bg-gradientup rounded-[3rem] overflow-hidden relative">
-                {/* <Image
+            <div className="mx-auto py-24 lg:px-16 md:px-12 px-8 xl:px-40 items-center lg:py-40 w-full bg-gradientup rounded-[3rem] overflow-hidden relative">
+                {/* <Image d
                     className="sr-only lg:not-sr-only lg:absolute mt-24 right-0"
                     src="/wave.PNG"
                     alt=""
@@ -45,10 +45,10 @@ const HeroSection = () => {
 
                         <div className="inline-flex flex-wrap items-center mt-8">
                             <a
-                                href="https://calendly.com/brandaob/42"
+                                href="https://calendly.com/callqwerty"
                                 className="text-sm  py-2 px-4 border focus:ring-2 rounded-full border-transparent bg-white hover:bg-white/10 text-black duration-200 focus:ring-offset-2 focus:ring-white hover:text-white inline-flex items-center justify-center ring-1 ring-transparent"
                             >
-                                Learn more
+                                Book A Call With Us!
                             </a>
                         </div>
 
@@ -60,7 +60,7 @@ const HeroSection = () => {
 
                 {/* <Meteors number={30} /> */}
             </div>
-            <div className="mx-auto 2xl:max-w-7xl  items-center  relative w-full">
+            {/* <div className="mx-auto   items-center  relative w-full">
                 <div className="relative isolate lg:flex-col overflow-hidden  rounded-[3rem] lg:flex p-3">
                     <div className="2xl:max-7xl border-zinc-800  lg:rounded-3xl overflow-hidden">
                         <div className="mx-auto">
@@ -100,16 +100,9 @@ const HeroSection = () => {
                             </div>
                         </div>
                     </div>
-                    {/* <div className="items-center w-xl px-8 py-12 lg:py-24 mx-auto md:px-12 lg:px-16 xl:px-36 2xl:max-w-7xl">
-                        <div className="text-center max-w-xl md:mx-auto">
-                            <span className="text-white"> Interactive Data Visualization</span>
-                            <h2 className="text-3xl tracking-tighter mt-6 font-light lg:text-4xl text-white">
-                                Mechanical keyboards <span className="block text-zinc-300">with zoc-zoc included</span>
-                            </h2>
-                        </div>
-                    </div> */}
+                   
                 </div>
-            </div>
+            </div> */}
 
 
 

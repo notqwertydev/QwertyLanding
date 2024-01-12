@@ -32,10 +32,10 @@ export default function RootLayout({
       <body className={inter.className}>
 
 
-        <div className='bg-[#0f1014] flex flex-col min-h-screen mx-auto 2xl:max-w-screen-xl'>
+        <div className='bg-[#0f1014] flex flex-col min-h-screen mx-auto 2xl:max-w-screen-3xl'>
 
           <NavBar />
-          <div className='px-0'>
+          <div className='px-8'>
             {children}
           </div>
         </div>

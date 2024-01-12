@@ -46,7 +46,7 @@ const TeamSection = () => {
 
     return (
         <section className="lg:p-8 mt-4" id='team'>
-            <div className="mx-auto 2xl:max-w-7xl py-24 lg:px-16 md:px-12 px-8 xl:px-36 items-center lg:py-24 relative w-full  rounded-[3rem]">
+            <div className="mx-auto  py-24 lg:px-16 md:px-12 px-8 xl:px-36 items-center lg:py-24 relative w-full  rounded-[3rem]">
                 <div className="mx-auto max-w-2xl lg:mx-0 pb-12 border-b border-white/10">
                     <span className="text-white">Our team</span>
                     <h2 className="text-3xl mt-6 tracking-tighter font-light lg:text-4xl text-white">

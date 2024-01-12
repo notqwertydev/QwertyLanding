@@ -26,10 +26,11 @@ const NavBar = () => {
                             >
                                 <Image
 
-                                    src="/logoqwerty.png"
+                                    src="/logoTransparent.png"
                                     alt=""
                                     width={35}
                                     height={35}
+                                    style={{ filter: 'brightness(0) invert(1)' }}
 
                                 />
                             </a>
