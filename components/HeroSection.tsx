@@ -6,7 +6,7 @@ import { Mail, MapPin } from "lucide-react";
 const HeroSection = () => {
     return (
         <section className="lg:p-8 overflow-hidden">
-            <div className="mx-auto 2xl:max-w-7xl py-24 lg:px-16 md:px-12 px-8 xl:px-40 items-center lg:py-40 w-full bg-gradientdown rounded-[3rem] overflow-hidden relative">
+            <div className="mx-auto 2xl:max-w-7xl py-24 lg:px-16 md:px-12 px-8 xl:px-40 items-center lg:py-40 w-full bg-gradientup rounded-[3rem] overflow-hidden relative">
                 {/* <Image
                     className="sr-only lg:not-sr-only lg:absolute mt-24 right-0"
                     src="/wave.PNG"
@@ -37,7 +37,10 @@ const HeroSection = () => {
                             
                         </div> */}
                         <p className="text-white mt-6">
-                        Bespoke applications, sophisticated software solutions, and interactive websites.  
+                            Bespoke applications, sophisticated software solutions, and interactive websites.
+                        </p>
+                        <p>
+
                         </p>
 
                         <div className="inline-flex flex-wrap items-center mt-8">
@@ -48,9 +51,64 @@ const HeroSection = () => {
                                 Learn more
                             </a>
                         </div>
+
                     </div>
+
+
                 </div>
+
+
                 {/* <Meteors number={30} /> */}
+            </div>
+            <div className="mx-auto 2xl:max-w-7xl  items-center  relative w-full">
+                <div className="relative isolate lg:flex-col overflow-hidden  rounded-[3rem] lg:flex p-3">
+                    <div className="2xl:max-7xl border-zinc-800  lg:rounded-3xl overflow-hidden">
+                        <div className="mx-auto">
+                            <div className="overflow-x-hidden relative">
+                                <div className="animate-marquee whitespace-nowrap gap-4 flex">
+                                    <img
+                                        src="/lightKeyboard.svg"
+                                        alt="Lexington thumbnail"
+                                        className="lg:w-[30rem] lg:flex-none opacity-50"
+                                    />
+                                    <img
+                                        src="/darkKeyboard.svg"
+                                        alt="Lexington thumbnail"
+                                        className="lg:w-[30rem] lg:flex-none opacity-50"
+                                    />
+                                    <img
+                                        src="/lightKeyboard.svg"
+                                        alt="Lexington thumbnail"
+                                        className="lg:w-[30rem] lg:flex-none opacity-50"
+                                    />
+                                    <img
+                                        src="/darkKeyboard.svg"
+                                        alt="Lexington thumbnail"
+                                        className="lg:w-[30rem] lg:flex-none opacity-50"
+                                    />
+                                    <img
+                                        src="/lightKeyboard.svg"
+                                        alt="Lexington thumbnail"
+                                        className="lg:w-[30rem] lg:flex-none opacity-50"
+                                    />
+                                    <img
+                                        src="/darkKeyboard.svg"
+                                        alt="Lexington thumbnail"
+                                        className="lg:w-[30rem] lg:flex-none opacity-50"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* <div className="items-center w-xl px-8 py-12 lg:py-24 mx-auto md:px-12 lg:px-16 xl:px-36 2xl:max-w-7xl">
+                        <div className="text-center max-w-xl md:mx-auto">
+                            <span className="text-white"> Interactive Data Visualization</span>
+                            <h2 className="text-3xl tracking-tighter mt-6 font-light lg:text-4xl text-white">
+                                Mechanical keyboards <span className="block text-zinc-300">with zoc-zoc included</span>
+                            </h2>
+                        </div>
+                    </div> */}
+                </div>
             </div>
 
 

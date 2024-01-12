@@ -138,5 +138,18 @@
   --tw-bg-opacity: 1;
   background-color: rgb(19 19 19 / var(--tw-bg-opacity))
 }
+@keyframes marquee {
+  0% {
+      transform: translate(0)
+  }
+
+  to {
+      transform: translate(-100%)
+  }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite
+}
   
 }
