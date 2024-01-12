@@ -64,7 +64,7 @@ const HeroSection = () => {
 
                 {/* <Meteors number={30} /> */}
             </div>
-            {/* <div className="mx-auto   items-center  relative w-full">
+            <div className="mx-auto   items-center  relative w-full">
                 <div className="relative isolate lg:flex-col overflow-hidden  rounded-[3rem] lg:flex p-3">
                     <div className="2xl:max-7xl border-zinc-800  lg:rounded-3xl overflow-hidden">
                         <div className="mx-auto">
@@ -106,7 +106,7 @@ const HeroSection = () => {
                     </div>
                    
                 </div>
-            </div> */}
+            </div>
 
 
 
