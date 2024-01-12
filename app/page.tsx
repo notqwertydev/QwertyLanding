@@ -16,7 +16,9 @@ export default function Home() {
     <div>
       <HeroSection />
       {/* <InteractiveSection /> */}
+      <div className='px-8'>
       <Segments />
+      </div>
 
       
       <TeamSection />
