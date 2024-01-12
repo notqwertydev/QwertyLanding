@@ -4,8 +4,8 @@
  
 @layer base {
   :root {
-    --background: #0f1014;
-    --foreground: 222.2 84% 4.9%;
+    --background: #01303f; /* Updated with the darkest color from your palette */
+    --foreground: #d4f0fc;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -76,7 +76,7 @@
 
 
   .bg-gradientdown {
-    background-image: radial-gradient(140% 107.13% at 50% 10%,transparent 37.41%,#364ef580 69.27%,#6698ff 100%);
+    background-image: radial-gradient(140% 107.13% at 50% 10%,transparent 37.41%,#02577a 69.27%,#02577a 100%);
   }
 
   .bg-gradientdown-gray {
@@ -88,7 +88,7 @@
 
 
   .bg-gradientup {
-      background-image: radial-gradient(131.66% 109.77% at 50% 97.75%,transparent 37.41%,#364ef580 69.27%,#6698ff 100%)
+      background-image: radial-gradient(131.66% 109.77% at 50% 97.75%,transparent 37.41%,#02577a 69.27%,#02577a 100%)
   }
 
   .ring-1 {

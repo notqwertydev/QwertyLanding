@@ -9,7 +9,7 @@ const Socials = () => {
             <div className="md:px-12 lg:px-16 xl:px-36 2xl:max-w-7xl px-8 py-12 mx-auto">
                 <div className="lg:grid lg:grid-cols-2 lg:items-end lg:gap-8 items-center justify-center">
                     <div className="text-center lg:text-left">
-                        <span className="text-blue-400">Socials</span>
+                        <span className="text-[#89d6fb]">Socials</span>
                         <h2 className="text-3xl mt-6 tracking-tighter font-light text-white">
                             Connect with <span className="text-zinc-300">me!</span>
                         </h2>

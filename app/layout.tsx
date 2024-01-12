@@ -27,7 +27,7 @@ export default function RootLayout({
         <meta property="og:title" content="QWERTY" />
         <meta property="og:description" content="QWERTY" />
         <meta property="og:image" content="/screen.png" />
-       
+
       </head>
       <body className={inter.className}>
 
@@ -35,8 +35,9 @@ export default function RootLayout({
         <div className='bg-[#0f1014] flex flex-col min-h-screen mx-auto 2xl:max-w-screen-xl'>
 
           <NavBar />
-
-          {children}
+          <div className='px-8'>
+            {children}
+          </div>
         </div>
 
 

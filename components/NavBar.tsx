@@ -67,12 +67,12 @@ const NavBar = () => {
                         >
                             <ul className="space-y-2 list-none text-sm text-white md:space-y-0 md:ml-auto items-center md:inline-flex justify-center text-center md:text-left gap-3 lg:gap-6">
                                 <li>
-                                    <a href="#ecosystem" className="hover:text-accent-400">
+                                    <a href="#services" className="hover:text-accent-400">
                                         Services
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#projects" className="hover:text-accent-400">
+                                    <a href="#team" className="hover:text-accent-400">
                                         Team
                                     </a>
                                 </li>

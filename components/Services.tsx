@@ -12,20 +12,20 @@ import {
 
 const ServicesSection = () => {
     return (
-        <section className="lg:p-8">
+        <section className="lg:p-8" id='services'>
             <div className="mx-auto 2xl:max-w-7xl py-12 lg:px-16 md:px-12 px-8 xl:px-36 items-center relative w-full">
                 <div className="max-w-xl mx-auto text-center">
-                    <span className="text-blue-400">Services</span>
+                    <span className="text-[#89d6fb]">Services</span>
                     <h2 className="text-3xl mt-6 tracking-tighter font-light lg:text-4xl text-white">
                         Learn about our services
                     </h2>
                 </div>
-
+                <div className='flex justify-center'>
                 <Carousel
                     opts={{
-                        align: "start",
+                        align: "center",
                     }}
-                    className="w-full mt-12 "
+                    className="w-11/12 mt-12 "
                 >
                     <CarouselContent>
                         {Array.from({ length: 5 }).map((_, index) => (
@@ -40,9 +40,10 @@ const ServicesSection = () => {
                             </CarouselItem>
                         ))}
                     </CarouselContent>
-                    <CarouselPrevious />
-                    <CarouselNext />
+                    <CarouselPrevious  />
+                    <CarouselNext  />
                 </Carousel>
+                </div>
 
             </div>
         </section>
