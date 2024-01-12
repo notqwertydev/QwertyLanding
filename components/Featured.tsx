@@ -2,8 +2,8 @@ import React from 'react';
 
 const FeaturesSection = () => {
     return (
-        <section className="p-8">
-            <div className="mx-auto py-24 items-center lg:py-24 relative w-full bg-gradientdown rounded-[3rem]">
+        <section className="lg:p-8">
+            <div className="mx-auto py-24 lg:px-16 md:px-12 px-8 xl:px-40 items-center lg:py-40 w-full bg-gradientdown rounded-[3rem] overflow-hidden relative">
                 <div className="text-center max-w-xl md:mx-auto">
                     <h2 className="text-3xl tracking-tighter font-light lg:text-4xl text-white">
                         Understanding the value of specialized skills and knowledge{' '}
