@@ -52,6 +52,7 @@ const TeamSection = () => {
                     <h2 className="text-3xl mt-6 tracking-tighter font-light lg:text-4xl text-white">
                         For founders,
                         by founders
+                        <br></br>
                         <span className="md:block text-zinc-300">
                            Innovation crafted with expert care.
                         </span>

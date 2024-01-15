@@ -10,6 +10,10 @@ const lol = Share_Tech({ weight: '400', subsets: ['latin'] })
 const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
+const handleNavLinkClick = () => {
+    setIsOpen(false);
+};
+
     return (
         <div className="fixed top-4 inset-x-0 z-50">
             <div className="lg:max-w-2xl mx-auto px-8">
@@ -66,20 +70,20 @@ const NavBar = () => {
                             className={`${isOpen ? 'flex' : 'hidden'
                                 } md:flex md:items-end justify-center md:flex-row`}
                         >
-                            <ul className="space-y-2 list-none text-sm text-white md:space-y-0 md:ml-auto items-center md:inline-flex justify-center text-center md:text-left gap-3 lg:gap-6">
+                            <ul className="space-y-8 list-none text-sm text-white md:space-y-0 md:ml-auto items-center md:inline-flex justify-center text-center md:text-left gap-3 lg:gap-6">
                                 <li>
-                                    <a href="#services" className="hover:text-accent-400">
+                                    <a href="#services" className="hover:text-accent-400" onClick={handleNavLinkClick}>
                                         Services
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#team" className="hover:text-accent-400">
+                                    <a href="#team" className="hover:text-accent-400" onClick={handleNavLinkClick}>
                                         Team
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="#segments" className="hover:text-accent-400">
+                                    <a href="#segments" className="hover:text-accent-400" onClick={handleNavLinkClick}>
                                         Contact
                                     </a>
                                 </li>
