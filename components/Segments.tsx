@@ -43,7 +43,7 @@ const Segments = () => {
 
                 <div ref={scope} className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-2 mt-4 w-lg">
                     {/* Feature 1 */}
-                    <InView triggerOnce>
+                    <InView >
                         {({ inView, ref }) => (
                             <motion.div
                                 ref={ref}
@@ -84,7 +84,7 @@ const Segments = () => {
                     </InView>
 
                     {/* Feature 2 */}
-                    <InView triggerOnce>
+                    <InView >
                         {({ inView, ref }) => (
                             <motion.div
                                 ref={ref}
@@ -140,7 +140,7 @@ const Segments = () => {
                     </div> */}
 
                     {/* Feature 4 */}
-                    <InView triggerOnce>
+                    <InView >
                         {({ inView, ref }) => (
                             <motion.div
                                 ref={ref}
@@ -179,7 +179,7 @@ const Segments = () => {
                     </InView>
 
                     {/* Feature 5 */}
-                    <InView triggerOnce>
+                    <InView >
                         {({ inView, ref }) => (
                             <motion.div
                                 ref={ref}
@@ -219,7 +219,7 @@ const Segments = () => {
                     </InView>
 
 
-                    <InView triggerOnce>
+                    <InView >
                         {({ inView, ref }) => (
                             <motion.div
                                 ref={ref}
@@ -260,7 +260,7 @@ const Segments = () => {
                     </InView>
 
                     {/* Feature 7 */}
-                    <InView triggerOnce>
+                    <InView >
                         {({ inView, ref }) => (
                             <motion.div
                                 ref={ref}
