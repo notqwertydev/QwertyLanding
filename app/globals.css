@@ -152,5 +152,34 @@
   animation: marquee 25s linear infinite
 }
 
+.email-link {
+  text-decoration: underline; /* Ensures the text is underlined */
+  color: white; /* Sets the default text color */
+  transition: color 0.3s; /* Adds a smooth color transition effect */
+}
+
+.email-link:hover {
+  color: #02a9f7; /* Changes text color on hover */
+}
+
+.responsive-iframe {
+  width: 100%; /* Makes the width of the iframe 100% of its parent */
+  height: 500px; /* Initial height */
+  max-width: 640px; /* Maximum width */
+  border: none; /* Optional: Removes the border */
+}
+
+@media (max-width: 768px) {
+  .responsive-iframe {
+      height: 400px; /* Adjust height for smaller devices */
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
   
 }

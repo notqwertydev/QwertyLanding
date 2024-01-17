@@ -8,7 +8,9 @@ import Segments from '@/components/Segments'
 import ServicesSection from '@/components/Services'
 import Socials from '@/components/Socials'
 import TeamSection from '@/components/Team'
+import ContactSection from '@/components/Contact'
 import TestimonialsSection from '@/components/Team'
+import { Contact } from 'lucide-react'
 import Image from 'next/image'
 
 export default function Home() {
@@ -22,7 +24,9 @@ export default function Home() {
 
       
       <TeamSection />
+      
       <FeaturesSection />
+      <ContactSection />
 
 
       {/* <Socials /> */}
