@@ -32,8 +32,7 @@ const Contact = () => {
                         <center>
                             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdtML6banEH7NOp-kih7Esp0Xz451_pkH4kmQXpq_v_8E-p_A/viewform?embedded=true"
                                 className="responsive-iframe"
-                                marginheight="0"
-                                marginwidth="0">
+                                >
                                 Loading…
                             </iframe>
                         </center>
