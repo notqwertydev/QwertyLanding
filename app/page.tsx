@@ -26,7 +26,7 @@ export default function Home() {
       <TeamSection />
       
       <FeaturesSection />
-      <ContactSection />
+      
 
 
       {/* <Socials /> */}

@@ -4,27 +4,20 @@ import Image from 'next/image';
 import { Share_Tech } from 'next/font/google'
 
 import { useState } from 'react';
+import Link from 'next/link';
 
 const lol = Share_Tech({ weight: '400', subsets: ['latin'] })
 
 const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
-    const handleNavLinkClick = (e) => {
-        e.preventDefault();
-        setIsOpen(false);
-        const targetId = e.currentTarget.getAttribute("href").slice(1);
-        const targetElement = document.getElementById(targetId);
-        if (targetElement) {
-            targetElement.scrollIntoView({ behavior: 'smooth' });
-        }
-};
+
 
     return (
         <div className="fixed top-4 inset-x-0 z-50">
             <div className="lg:max-w-2xl mx-auto px-8">
                 <div className="w-full mx-auto">
-                    
+
                     <div
                         className="relative flex flex-col w-full p-3 mx-auto bg-black/70 ring-1 ring-inset ring-white/10 shadow-thick backdrop-blur-xl backdrop-filter rounded-xl md:rounded-full md:items-center md:justify-between md:flex-row"
                     >
@@ -36,11 +29,11 @@ const NavBar = () => {
                             >
                                 <Image
 
-                                    src="/logoTransparent.png"
+                                    src="/logos/qLogo.png"
                                     alt=""
-                                    width={35}
-                                    height={35}
-                                    style={{ filter: 'brightness(0) invert(1)' }}
+                                    width={15}
+                                    height={15}
+                                    
 
                                 />
                             </a>
@@ -78,20 +71,20 @@ const NavBar = () => {
                         >
                             <ul className="space-y-8 list-none text-sm text-white md:space-y-0 md:ml-auto items-center md:inline-flex justify-center text-center md:text-left gap-3 lg:gap-6">
                                 <li>
-                                    <a href="#services" className="hover:text-accent-400" onClick={handleNavLinkClick}>
+                                    <Link href="/#services" className="hover:text-accent-400" >
                                         Services
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="#team" className="hover:text-accent-400" onClick={handleNavLinkClick}>
+                                    <Link href="/#team" className="hover:text-accent-400" >
                                         Team
-                                    </a>
+                                    </Link>
                                 </li>
 
                                 <li>
-                                    <a href="#contact" className="hover:text-accent-400" onClick={handleNavLinkClick}>
+                                    <Link href="/Contact" className="hover:text-accent-400">
                                         Contact
-                                    </a>
+                                    </Link>
                                 </li>
 
                             </ul>
