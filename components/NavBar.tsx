@@ -34,9 +34,12 @@ const NavBar = () => {
             <div className="lg:max-w-2xl mx-auto px-8">
                 <div className="w-full mx-auto">
 
-                    <div
-                        className="relative flex flex-col w-full p-3 mx-auto bg-black/70 ring-1 ring-inset ring-white/10 shadow-thick backdrop-blur-xl backdrop-filter rounded-xl md:rounded-full md:items-center md:justify-between md:flex-row"
-                    >
+                    <div className="relative flex flex-col w-full p-3 mx-auto bg-black/70 ring-1 ring-inset ring-white/10 shadow-thick backdrop-blur-xl backdrop-filter rounded-xl md:rounded-full md:items-center md:justify-between md:flex-row overflow-hidden">
+
+                        <div className="progressBar" style={{ width: `${scrollProgress > 98 ? 98 : scrollProgress}%` }}></div>
+
+
+
                         <div className="flex flex-row items-center align-center justify-between md:justify-start">
                             <a
                                 href="/"
@@ -54,66 +57,66 @@ const NavBar = () => {
                                 />
                             </a>
 
-                                <div className="progressBar rounded-full" style={{ width: `${scrollProgress}%` }}></div>
-                                <button
-                                    onClick={() => setIsOpen(!isOpen)}
-                                    className="inline-flex items-center justify-center p-2 text-zinc-400 hover:text-accent-300 focus:outline-none focus:text-white md:hidden"
-                                >
-                                    <svg
-                                        className="w-6 h-6"
-                                        stroke="currentColor"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                    >
-                                        <path
-                                            className={isOpen ? 'hidden' : 'inline-flex'}
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth="2"
-                                            d="M4 6h16M4 12h16M4 18h16"
-                                        ></path>
-                                        <path
-                                            className={isOpen ? 'inline-flex' : 'hidden'}
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth="2"
-                                            d="M6 18L18 6M6 6l12 12"
-                                        ></path>
-                                    </svg>
 
-                                </button>
-                            </div>
-                            <nav
-                                className={`${isOpen ? 'flex' : 'hidden'
-                                    } md:flex md:items-end justify-center md:flex-row`}
+                            <button
+                                onClick={() => setIsOpen(!isOpen)}
+                                className="inline-flex items-center justify-center p-2 text-zinc-400 hover:text-accent-300 focus:outline-none focus:text-white md:hidden"
                             >
-                                <ul className="space-y-8 list-none text-sm text-white md:space-y-0 md:ml-auto items-center md:inline-flex justify-center text-center md:text-left gap-3 lg:gap-6">
-                                    <li>
-                                        <Link href="/#services" className="hover:text-accent-400 zoom-on-hover">
-                                            Services
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/#team" className="hover:text-accent-400 zoom-on-hover">
-                                            Team
-                                        </Link>
-                                    </li>
+                                <svg
+                                    className="w-6 h-6"
+                                    stroke="currentColor"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        className={isOpen ? 'hidden' : 'inline-flex'}
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth="2"
+                                        d="M4 6h16M4 12h16M4 18h16"
+                                    ></path>
+                                    <path
+                                        className={isOpen ? 'inline-flex' : 'hidden'}
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth="2"
+                                        d="M6 18L18 6M6 6l12 12"
+                                    ></path>
+                                </svg>
 
-                                    <li>
-                                        <Link href="/Contact" className="hover:text-accent-400 zoom-on-hover">
-                                            Contact
-                                        </Link>
-                                    </li>
-
-
-                                </ul>
-                            </nav>
+                            </button>
                         </div>
+                        <nav
+                            className={`${isOpen ? 'flex' : 'hidden'
+                                } md:flex md:items-end justify-center md:flex-row`}
+                        >
+                            <ul className="space-y-8 list-none text-sm text-white md:space-y-0 md:ml-auto items-center md:inline-flex justify-center text-center md:text-left gap-3 lg:gap-6">
+                                <li>
+                                    <Link href="/#services" className="hover:text-accent-400 zoom-on-hover">
+                                        Services
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/#team" className="hover:text-accent-400 zoom-on-hover">
+                                        Team
+                                    </Link>
+                                </li>
+
+                                <li>
+                                    <Link href="/Contact" className="hover:text-accent-400 zoom-on-hover">
+                                        Contact
+                                    </Link>
+                                </li>
+
+
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
+        </div>
 
-            );
+    );
 };
 
-            export default NavBar;
+export default NavBar;

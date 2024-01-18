@@ -200,13 +200,14 @@ html {
 
 .progressBar {
   position: fixed;
-  height: 2px;
-  width: 90%;
-  background: #89d6fb; /* Change this to your preferred color */
+  height: 4px;
+
+  background: linear-gradient(to right, transparent, #89d6fb); /* Gradient from transparent to #89d6fb */
   top: 0;
   left: 0;
-  z-index: 100; /* Ensure it's above other elements */
-  transition: width 0.25s ease-out;
+  z-index: 100;
+  border-radius: 50%;
+  transition: width 0.5s ease-out;
 }
 
 
