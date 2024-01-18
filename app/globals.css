@@ -168,19 +168,47 @@ html {
   scroll-behavior: smooth;
 }
 
-.parallax {
-  /* The image used */
-  background-image: url('path-to-your-image.jpg');
-
-  /* Set a specific height */
-  min-height: 500px; 
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+
+.image-animation {
+  animation: fadeInDown 4s ease-out;
+}
+.button-animation {
+  transition: transform 5s ease;
+}
+
+.button-animation:hover {
+  transform: scale(1.05);
+}
+
+.zoom-on-hover {
+  transition: transform 0.3s ease;
+}
+
+.zoom-on-hover:hover {
+  color: #89d6fb; /* Adjust scale value as needed */
+}
+
+.progressBar {
+  position: fixed;
+  height: 2px;
+  width: 90%;
+  background: #89d6fb; /* Change this to your preferred color */
+  top: 0;
+  left: 0;
+  z-index: 100; /* Ensure it's above other elements */
+  transition: width 0.25s ease-out;
+}
+
 
 
 

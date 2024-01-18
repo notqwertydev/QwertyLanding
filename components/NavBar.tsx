@@ -3,13 +3,29 @@ import Image from 'next/image';
 // components/NavBar.js
 import { Share_Tech } from 'next/font/google'
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
-
-const lol = Share_Tech({ weight: '400', subsets: ['latin'] })
 
 const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [scrollProgress, setScrollProgress] = useState(0);
+
+    useEffect(() => {
+        const updateScrollProgress = () => {
+            const scrollTop = window.pageYOffset;
+            const windowHeight = window.innerHeight;
+            const docHeight = document.documentElement.scrollHeight;
+
+            const totalDocScrollLength = docHeight - windowHeight;
+            const scrollPosition = Math.floor((scrollTop / totalDocScrollLength) * 100);
+
+            setScrollProgress(scrollPosition);
+        };
+
+        window.addEventListener('scroll', updateScrollProgress);
+        return () => window.removeEventListener('scroll', updateScrollProgress);
+    }, []);
+
 
 
 
@@ -33,68 +49,71 @@ const NavBar = () => {
                                     alt=""
                                     width={15}
                                     height={15}
-                                    
+
 
                                 />
                             </a>
-                            <button
-                                onClick={() => setIsOpen(!isOpen)}
-                                className="inline-flex items-center justify-center p-2 text-zinc-400 hover:text-accent-300 focus:outline-none focus:text-white md:hidden"
-                            >
-                                <svg
-                                    className="w-6 h-6"
-                                    stroke="currentColor"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
+
+                                <div className="progressBar rounded-full" style={{ width: `${scrollProgress}%` }}></div>
+                                <button
+                                    onClick={() => setIsOpen(!isOpen)}
+                                    className="inline-flex items-center justify-center p-2 text-zinc-400 hover:text-accent-300 focus:outline-none focus:text-white md:hidden"
                                 >
-                                    <path
-                                        className={isOpen ? 'hidden' : 'inline-flex'}
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="2"
-                                        d="M4 6h16M4 12h16M4 18h16"
-                                    ></path>
-                                    <path
-                                        className={isOpen ? 'inline-flex' : 'hidden'}
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="2"
-                                        d="M6 18L18 6M6 6l12 12"
-                                    ></path>
-                                </svg>
+                                    <svg
+                                        className="w-6 h-6"
+                                        stroke="currentColor"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            className={isOpen ? 'hidden' : 'inline-flex'}
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth="2"
+                                            d="M4 6h16M4 12h16M4 18h16"
+                                        ></path>
+                                        <path
+                                            className={isOpen ? 'inline-flex' : 'hidden'}
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth="2"
+                                            d="M6 18L18 6M6 6l12 12"
+                                        ></path>
+                                    </svg>
 
-                            </button>
+                                </button>
+                            </div>
+                            <nav
+                                className={`${isOpen ? 'flex' : 'hidden'
+                                    } md:flex md:items-end justify-center md:flex-row`}
+                            >
+                                <ul className="space-y-8 list-none text-sm text-white md:space-y-0 md:ml-auto items-center md:inline-flex justify-center text-center md:text-left gap-3 lg:gap-6">
+                                    <li>
+                                        <Link href="/#services" className="hover:text-accent-400 zoom-on-hover">
+                                            Services
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/#team" className="hover:text-accent-400 zoom-on-hover">
+                                            Team
+                                        </Link>
+                                    </li>
+
+                                    <li>
+                                        <Link href="/Contact" className="hover:text-accent-400 zoom-on-hover">
+                                            Contact
+                                        </Link>
+                                    </li>
+
+
+                                </ul>
+                            </nav>
                         </div>
-                        <nav
-                            className={`${isOpen ? 'flex' : 'hidden'
-                                } md:flex md:items-end justify-center md:flex-row`}
-                        >
-                            <ul className="space-y-8 list-none text-sm text-white md:space-y-0 md:ml-auto items-center md:inline-flex justify-center text-center md:text-left gap-3 lg:gap-6">
-                                <li>
-                                    <Link href="/#services" className="hover:text-accent-400" >
-                                        Services
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/#team" className="hover:text-accent-400" >
-                                        Team
-                                    </Link>
-                                </li>
-
-                                <li>
-                                    <Link href="/Contact" className="hover:text-accent-400">
-                                        Contact
-                                    </Link>
-                                </li>
-
-                            </ul>
-                        </nav>
                     </div>
                 </div>
             </div>
-        </div>
 
-    );
+            );
 };
 
-export default NavBar;
+            export default NavBar;

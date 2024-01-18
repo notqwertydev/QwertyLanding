@@ -42,17 +42,15 @@ const HeroSection = () => {
                     <div className="mt-6">
                         <h1 className="text-3xl mt-6 tracking-tighter font-light lg:text-6xl text-white">
                             <Image
-
+                                className="image-animation"
                                 src="/logos/qwerty.png"
                                 alt=""
                                 width={250}
                                 height={250}
-
-
                             />
                             <span className="block text-zinc-400"></span>
                         </h1>
-                        <p className="text-white mt-6">
+                        <p className="text-white mt-6 image-animation" >
                             Bespoke applications, sophisticated software solutions, and interactive websites.
                         </p>
                         <p>
@@ -63,9 +61,8 @@ const HeroSection = () => {
                             <Link
                                 href="https://calendly.com/callqwerty"
                                 target="_blank"
-                                rel='noreferrer noopener '
-
-                                className="text-sm  py-2 px-4 border focus:ring-2 rounded-full border-transparent bg-white hover:bg-white/10 text-black duration-200 focus:ring-offset-2 focus:ring-white hover:text-white inline-flex items-center justify-center ring-1 ring-transparent"
+                                rel='noreferrer noopener'
+                                className="text-sm py-2 px-4 border focus:ring-2 rounded-full border-transparent bg-white hover:bg-white/10 text-black duration-200 focus:ring-offset-2 focus:ring-white hover:text-white inline-flex items-center justify-center ring-1 ring-transparent button-animation"
                             >
                                 Book A Call With Us!
                             </Link>
