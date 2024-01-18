@@ -10,7 +10,7 @@ const ContactFormSection = () => {
                         <div className="flex flex-col">
                             <div className="border-b pb-12">
                                 <p className="text-3xl tracking-tighter font-light lg:text-4xl text-black">
-                                    Let's get started!
+                                    Let&apos;s get started!
                                 </p>
                                 <p className="mt-2 text-sm text-zinc-400">
                                     Complete the details below so Buio can process your request and then schedule a
