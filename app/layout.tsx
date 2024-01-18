@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import NavBar from '@/components/NavBar'
 import { Plus_Jakarta_Sans } from 'next/font/google'
+import Footer, { SiteFooter } from '@/components/site-footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -38,6 +39,7 @@ export default function RootLayout({
           <div className='px-0'>
             {children}
           </div>
+          <Footer /> 
         </div>
 
 

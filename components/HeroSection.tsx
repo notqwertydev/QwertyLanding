@@ -1,14 +1,22 @@
+"use client";
 // HeroSection.js
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { Meteors } from './magicui/meteors';
 import { Mail, MapPin } from "lucide-react";
 import Link from 'next/link';
 const HeroSection = () => {
+
+    // const videoRef = useRef(null);
+
+    // useEffect(() => {
+    //     videoRef.current.playbackRate = 2.5;
+    // }, []);
+
     return (
         <section className="lg:p-8 overflow-hidden">
             <div className="mx-auto py-24 lg:px-16 md:px-12 px-8 xl:px-40 items-center lg:py-40 w-full bg-gradientup rounded-[3rem] overflow-hidden relative">
-                {/* <Image d
+                {/* <Image 
                     className="sr-only lg:not-sr-only lg:absolute mt-24 right-0"
                     src="/wave.PNG"
                     alt=""
@@ -16,6 +24,20 @@ const HeroSection = () => {
                     height={600}
 
                 /> */}
+                {/* 
+                <video
+                    ref={videoRef}
+                    className="hidden lg:block lg:absolute mt-24 right-20 bottom-12 h-[400px] w-[400px]"
+                    width={200}
+                    height={200}
+                    src="/logos/logo.mp4"
+                    autoPlay
+                    muted
+                    loop
+
+
+                >
+                </video> */}
                 <div className="max-w-xl">
                     {/* <div className="mb-8 flex">
                         <span className="relative rounded-full px-3 py-1 text-sm leading-6 text-white ring-1 ring-white/10">
