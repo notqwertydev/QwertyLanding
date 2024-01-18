@@ -39,11 +39,6 @@ const HeroSection = () => {
                 >
                 </video> */}
                 <div className="max-w-xl">
-                    {/* <div className="mb-8 flex">
-                        <span className="relative rounded-full px-3 py-1 text-sm leading-6 text-white ring-1 ring-white/10">
-                            Welcome to Buio
-                        </span>
-                    </div> */}
                     <div className="mt-6">
                         <h1 className="text-3xl mt-6 tracking-tighter font-light lg:text-6xl text-white">
                             <Image
@@ -57,16 +52,6 @@ const HeroSection = () => {
                             />
                             <span className="block text-zinc-400"></span>
                         </h1>
-                        {/* <div className="flex items-center gap-3 mt-6 text-zinc-400 ">
-                            <a
-                                href={`/`}
-                                className="flex items-center w-fit gap-2  py-2 text-sm font-medium  rounded-md   "
-                            >
-                                <MapPin size="14" />
-                                United States, New Mexico | Europe, Spain, Madrid
-                            </a>
-                            
-                        </div> */}
                         <p className="text-white mt-6">
                             Bespoke applications, sophisticated software solutions, and interactive websites.
                         </p>
