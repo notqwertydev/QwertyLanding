@@ -57,7 +57,7 @@ const NavBar = () => {
                                 />
                             </a>
 
-                            <div className="progressBar" style={{ width: `${scrollProgress > 98 ? 98 : scrollProgress}%` }}></div>
+                            <div className="progressBar absolute top-0 left-0" style={{ width: `${scrollProgress > 98 ? 98 : scrollProgress}%` }}></div>
                             <button
                                 onClick={() => setIsOpen(!isOpen)}
                                 className="inline-flex items-center justify-center p-2 text-zinc-400 hover:text-accent-300 focus:outline-none focus:text-white md:hidden"

@@ -199,7 +199,7 @@ html {
 }
 
 .progressBar {
-  position: fixed;
+
   height: 4px;
 
   background: linear-gradient(to right, transparent, #89d6fb); /* Gradient from transparent to #89d6fb */
