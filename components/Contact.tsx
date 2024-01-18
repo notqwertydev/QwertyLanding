@@ -11,7 +11,7 @@ const Contact = () => {
                         Join the Team
                     </h2>
                     <p className="mt-4 text-lg text-gray-600">
-                        Looking for a career opportunity? We'd love to hear from you.
+                        Looking for a career opportunity? We&apos;d love to hear from you.
                     </p>
                     <br></br>
                     <p className="text-2xl font-medium text-white">
@@ -26,7 +26,7 @@ const Contact = () => {
                         Let Us Build for You
                     </h2>
                     <p className="mt-4 text-lg text-gray-600">
-                        Have a project in mind? Let's make it happen.
+                        Have a project in mind? Let&apos;s make it happen.
                     </p>
                     <form className="mt-6">
                         <center>
