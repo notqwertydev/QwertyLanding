@@ -23,9 +23,6 @@ const Ecosystem = () => {
                             {/* Feature 1 */}
                             <div>
                                 <dt className="inline-flex items-center gap-3">
-                                    {/* <div className="flex items-center justify-center text-white">
-                                       
-                                    </div> */}
                                     <p className="text-base font-medium leading-6 text-white">Professionals</p>
                                 </dt>
 
@@ -34,32 +31,6 @@ const Ecosystem = () => {
                             {/* Feature 2 */}
                             <div>
                                 <dt className="inline-flex items-center gap-3">
-                                    {/* <div className="flex items-center justify-center text-white">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            className="icon icon-tabler icon-tabler-artboard"
-                                            width="20"
-                                            height="20"
-                                            viewBox="0 0 24 24"
-                                            strokeWidth="1"
-                                            stroke="currentColor"
-                                            fill="none"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            aria-hidden="true"
-                                        >
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                            <rect x="8" y="8" width="8" height="8" rx="1"></rect>
-                                            <line x1="3" y1="8" x2="4" y2="8"></line>
-                                            <line x1="3" y1="16" x2="4" y2="16"></line>
-                                            <line x1="8" y1="3" x2="8" y2="4"></line>
-                                            <line x1="16" y1="3" x2="16" y2="4"></line>
-                                            <line x1="20" y1="8" x2="21" y2="8"></line>
-                                            <line x1="20" y1="16" x2="21" y2="16"></line>
-                                            <line x1="8" y1="20" x2="8" y2="21"></line>
-                                            <line x1="16" y1="20" x2="16" y2="21"></line>
-                                        </svg>
-                                    </div> */}
                                     <p className="text-base font-medium leading-6 text-white">Small Cap / Retail Investors</p>
                                 </dt>
 
@@ -68,25 +39,6 @@ const Ecosystem = () => {
                             {/* Feature 3 */}
                             <div>
                                 <dt className="inline-flex items-center gap-3">
-                                    {/* <div className="flex items-center justify-center text-white">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            className="icon icon-tabler icon-tabler-medal"
-                                            width="20"
-                                            height="20"
-                                            viewBox="0 0 24 24"
-                                            strokeWidth="1"
-                                            stroke="currentColor"
-                                            fill="none"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            aria-hidden="true"
-                                        >
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                            <path d="M12 4v3m-4 -3v6m8 -6v6"></path>
-                                            <path d="M12 18.5l-3 1.5l.5 -3.5l-2 -2l3 -.5l1.5 -3l1.5 3l3 .5l-2 2l.5 3.5z"></path>
-                                        </svg>
-                                    </div> */}
                                     <p className="text-base font-medium leading-6 text-white">Crypto / NFTs</p>
                                 </dt>
 
@@ -101,34 +53,6 @@ const Ecosystem = () => {
                             </div>
 
                         </dl>
-                        {/* <div className="flow-root w-full">
-                            <div className="-ml-8 grid grid-cols-5 lg:-ml-4">
-                               
-                                <div className="mt-4 ml-8 flex flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0">
-                                    <img src="heart.png" alt="" />
-                                </div>
-
-                            
-                                <div className="mt-4 ml-8 flex flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0">
-                                    <img src="heart.png" alt="" />
-                                </div>
-
-                    
-                                <div className="mt-4 ml-8 flex flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0">
-                                    <img src="heart.png" alt="" />
-                                </div>
-
-                  
-                                <div className="mt-4 ml-8 flex flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0">
-                                    <img src="/heart.png" alt="" />
-                                </div>
-
-                    
-                                <div className="mt-4 ml-8 flex flex-shrink-0 flex-grow lg:ml-4 lg:flex-grow-0">
-                                    <img src="heart.png" alt="" />
-                                </div>
-                            </div>
-                        </div> */}
                     </div>
 
                     <div className="mt-24">
@@ -151,32 +75,6 @@ const Ecosystem = () => {
                             {/* Feature 2 */}
                             <div>
                                 <dt className="inline-flex items-center gap-3">
-                                    {/* <div className="flex items-center justify-center text-white">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            className="icon icon-tabler icon-tabler-artboard"
-                                            width="20"
-                                            height="20"
-                                            viewBox="0 0 24 24"
-                                            strokeWidth="1"
-                                            stroke="currentColor"
-                                            fill="none"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            aria-hidden="true"
-                                        >
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                            <rect x="8" y="8" width="8" height="8" rx="1"></rect>
-                                            <line x1="3" y1="8" x2="4" y2="8"></line>
-                                            <line x1="3" y1="16" x2="4" y2="16"></line>
-                                            <line x1="8" y1="3" x2="8" y2="4"></line>
-                                            <line x1="16" y1="3" x2="16" y2="4"></line>
-                                            <line x1="20" y1="8" x2="21" y2="8"></line>
-                                            <line x1="20" y1="16" x2="21" y2="16"></line>
-                                            <line x1="8" y1="20" x2="8" y2="21"></line>
-                                            <line x1="16" y1="20" x2="16" y2="21"></line>
-                                        </svg>
-                                    </div> */}
                                     <p className="text-base font-medium leading-6 text-white">Legal</p>
                                 </dt>
 

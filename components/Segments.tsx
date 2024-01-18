@@ -102,9 +102,6 @@ const Segments = () => {
 
                                 className="h-full p-2 bg-gradientup  from-white/20 ring-1 ring-white/10 rounded-3xl">
                                 <div className="flex flex-col justify-between h-full p-4 overflow-hidden shadow-massive ring-1 ring-white/10 rounded-2xl bg-ebony">
-                                    {/* <div>
-                                <Image src="/funds.png" alt="Feature 2" width={500} height={500} />
-                            </div> */}
                                     <div className="flex flex-col gap-2 p-4">
                                         <div className='text-white flex gap-2'>
                                             <TabletSmartphone />
@@ -121,23 +118,6 @@ const Segments = () => {
                             </motion.div>
                         )}
                     </InView>
-
-                    {/* Feature 3 */}
-                    {/* <div className="h-full p-2 bg-gradient-to-t from-white/20 ring-1 ring-white/10 rounded-3xl lg:-mt-24">
-                        <div className="flex flex-col justify-between h-full p-4 overflow-hidden shadow-massive ring-1 ring-white/10 rounded-2xl bg-ebony">
-                            <div>
-                                <img src="/heart.png" alt="Feature 3" />
-                            </div>
-                            <div className="flex flex-col gap-2 p-4">
-                                <p className="text-lg text-white font-display lg:text-xl">
-                                    Legal
-                                </p>
-                                <p className="text-sm text-vanta-300">
-                                    Establish a robust legal framework for your startup. Our legal experts specialize in delivering customized solutions, guaranteeing compliance, and safeguarding the interests of your venture.
-                                </p>
-                            </div>
-                        </div>
-                    </div> */}
 
                     {/* Feature 4 */}
                     <InView >
@@ -300,55 +280,7 @@ const Segments = () => {
                         )}
                     </InView>
 
-                    {/* Feature 6 */}
-                    {/* <div className="p-2 bg-gradient-to-t from-white/20 ring-1 ring-white/10 rounded-3xl lg:-mt-24">
-                        <div className="flex flex-col justify-between h-full p-4 overflow-hidden shadow-massive ring-1 ring-white/10 rounded-2xl bg-ebony">
-                            <div>
-                                <img src="/widget1.svg" alt="Feature 6" />
-                            </div>
-                            <div className="flex flex-col gap-2 p-4">
-                                <p className="text-lg text-white font-display lg:text-xl">
-                                    Expert instructors
-                                </p>
-                                <p className="text-sm text-vanta-300">
-                                    Learn from accomplished experts and industry professionals,
-                                    gaining insights from their real-world experience.
-                                </p>
-                            </div>
-                        </div>
-                    </div> */}
                 </div>
-
-
-
-
-                {/* <div className=" mt-10 md:mt-40 items-center w-full">
-                    <div className="h-full bg-gradientdown ring-1 text-center ring-white/10 rounded-3xl p-8 lg:p-20 lg:col-span-full">
-                        <h2 className="text-3xl mt-6 tracking-tighter font-light lg:text-4xl text-white">
-                            Consulting <span className="text-zinc-400">and Mentoring</span>
-                        </h2>
-                        <p className="mt-4 text-sm text-zinc-300 max-w-lg mx-auto">
-                            Navigate challenges and make informed decisions with our comprehensive consulting services. Our team of proven experts spans all seven critical sectors— business design, funds, legal, technology development, graphic design, marketing, and consulting. By tapping into our collective knowledge, we provide invaluable insights tailored to your startup&apos;s unique journey, empowering you to steer confidently towards unparalleled success.
-                        </p>
-                        <div className="mt-10 flex items-center justify-center gap-x-6">
-                            <a
-                                href="https://calendly.com/brandaob/42"
-                                className="text-sm py-2 px-4 border focus:ring-2 rounded-full w-auto border-transparent bg-white/5 hover:bg-transparent text-white duration-200 focus:ring-offset-2 focus:ring-white hover:text-white inline-flex items-center justify-center ring-1 ring-white/10"
-                            >
-                                Book a 30 Min Call Today!
-                            </a>
-                        </div>
-                        <div className='flex justify-center mt-10'>
-                            <Image src="/fuser.gif" alt="Consulting" width={200} height={200} />
-                        </div>
-                    </div>
-
-                </div> */}
-
-
-
-
-
 
             </div>
         </section >

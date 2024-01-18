@@ -43,14 +43,6 @@ const InteractiveSection = () => {
                             </div>
                         </div>
                     </div>
-                    {/* <div className="items-center w-xl px-8 py-12 lg:py-24 mx-auto md:px-12 lg:px-16 xl:px-36 2xl:max-w-7xl">
-                        <div className="text-center max-w-xl md:mx-auto">
-                            <span className="text-white"> Interactive Data Visualization</span>
-                            <h2 className="text-3xl tracking-tighter mt-6 font-light lg:text-4xl text-white">
-                                Mechanical keyboards <span className="block text-zinc-300">with zoc-zoc included</span>
-                            </h2>
-                        </div>
-                    </div> */}
                 </div>
             </div>
         </section>
