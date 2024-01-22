@@ -13,8 +13,7 @@ const ContactFormSection = () => {
                                     Let&apos;s get started!
                                 </p>
                                 <p className="mt-2 text-sm text-zinc-400">
-                                    Complete the details below so Buio can process your request and then schedule a
-                                    time to discuss your goals.
+                                    Let us know what you want and we will be contacting you shortly
                                 </p>
                             </div>
                             <ContactSection />

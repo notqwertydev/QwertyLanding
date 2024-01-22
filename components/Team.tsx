@@ -53,17 +53,17 @@ const TeamSection = () => {
     const teamMembers = [
         {
             name: 'Michel',
-            role: 'Co-Founder / CTO',
+            role: 'Co-Founder',
             imageUrl: '/team/Michel.jpg',
         },
         {
             name: 'Ryan',
-            role: 'Co-Founder / CEO',
+            role: 'Co-Founder',
             imageUrl: '/team/Ryan.jpg',
         },
         {
             name: 'Karim',
-            role: 'Co-Founder / CFO',
+            role: 'Co-Founder',
             imageUrl: '/team/Karim.jpg',
         },
 
