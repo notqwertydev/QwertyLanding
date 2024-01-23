@@ -7,37 +7,14 @@ import { Mail, MapPin } from "lucide-react";
 import Link from 'next/link';
 const HeroSection = () => {
 
-    // const videoRef = useRef(null);
-
-    // useEffect(() => {
-    //     videoRef.current.playbackRate = 2.5;
-    // }, []);
 
     return (
         <section className="lg:p-8 overflow-hidden">
-            <div className="mx-auto py-24 lg:px-16 md:px-12 px-8 xl:px-40 items-center lg:py-40 w-full bg-gradientup rounded-[3rem] overflow-hidden relative">
-                {/* <Image 
-                    className="sr-only lg:not-sr-only lg:absolute mt-24 right-0"
-                    src="/wave.PNG"
-                    alt=""
-                    width={600}
-                    height={600}
-
-                /> */}
-                {/* 
-                <video
-                    ref={videoRef}
-                    className="hidden lg:block lg:absolute mt-24 right-20 bottom-12 h-[400px] w-[400px]"
-                    width={200}
-                    height={200}
-                    src="/logos/logo.mp4"
-                    autoPlay
-                    muted
-                    loop
-
-
-                >
-                </video> */}
+                    <div className="mx-auto py-24 lg:px-16 md:px-12 px-8 xl:px-40 items-center lg:py-40 w-full bg-gradientup rounded-[3rem] overflow-hidden relative">
+                        <img
+                            className="hidden lg:block lg:absolute mt-6 bottom-8 right-0 mr-2 h-[500px] w-[500px]"
+                            src="/logos/qwertyanimationwhite.gif">
+                        </img>
                 <div className="max-w-xl">
                     <div className="mt-6">
                         <h1 className="text-3xl mt-6 tracking-tighter font-light lg:text-6xl text-white">
@@ -75,7 +52,7 @@ const HeroSection = () => {
 
 
                 {/* <Meteors number={30} /> */}
-            </div>
+            </div >
             <div className="mx-auto   items-center  relative w-full">
                 <div className="relative isolate lg:flex-col overflow-hidden  rounded-[3rem] lg:flex p-3">
                     <div className="2xl:max-7xl border-zinc-800  lg:rounded-3xl overflow-hidden">
@@ -122,7 +99,7 @@ const HeroSection = () => {
 
 
 
-        </section>
+        </section >
     );
 };
 
