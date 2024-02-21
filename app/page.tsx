@@ -21,10 +21,7 @@ export default function Home() {
       <div className='px-8'>
       <Segments />
       </div>
-
-      
       <TeamSection />
-      
       <FeaturesSection />
       
 
