@@ -1,122 +1,113 @@
-"use client";
-import Image from 'next/image';
-// components/NavBar.js
-import { Share_Tech } from 'next/font/google'
-
+'use client';
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
+import { Dialog } from '@headlessui/react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import Image from 'next/image';
+import { Link } from 'react-scroll';
 
-const NavBar = () => {
-    const [isOpen, setIsOpen] = useState(false);
-    const [scrollProgress, setScrollProgress] = useState(0);
+const navigation = [
+    { name: 'About', href: 'about' },
+    { name: 'Services', href: 'services' },
+    { name: 'Why us', href: 'why-us' },
+];
+
+export default function Example() {
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
 
     useEffect(() => {
-        const updateScrollProgress = () => {
-            const scrollTop = window.pageYOffset;
-            const windowHeight = window.innerHeight;
-            const docHeight = document.documentElement.scrollHeight;
-
-            const totalDocScrollLength = docHeight - windowHeight;
-            const scrollPosition = Math.floor((scrollTop / totalDocScrollLength) * 100);
-
-            setScrollProgress(scrollPosition);
+        const handleScroll = () => {
+            if (window.scrollY > 10) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
         };
 
-        window.addEventListener('scroll', updateScrollProgress);
-        return () => window.removeEventListener('scroll', updateScrollProgress);
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
     }, []);
 
-
-
-
     return (
-        <div className="fixed top-4 inset-x-0 z-50">
-            <div className="lg:max-w-2xl mx-auto px-8">
-                <div className="w-full mx-auto">
-
-                    <div className="relative flex flex-col w-full p-3 mx-auto bg-black/70 ring-1 ring-inset ring-white/10 shadow-thick backdrop-blur-xl backdrop-filter rounded-xl md:rounded-full md:items-center md:justify-between md:flex-row overflow-hidden">
-
-
-
-
-
-                        <div className="flex flex-row items-center align-center justify-between md:justify-start">
-                            <a
-                                href="/"
-
-                                className="text-white hover:text-white/50 gap-4 items-center tracking-tighter uppercase inline-flex font-medium ml-2 text-lg"
-                            >
-                                <Image
-
-                                    src="/logos/qLogo.png"
-                                    alt=""
-                                    width={15}
-                                    height={15}
-
-
-                                />
-                            </a>
-
-                            <div className="progressBar absolute top-0 left-0" style={{ width: `${scrollProgress > 98 ? 98 : scrollProgress}%` }}></div>
-                            <button
-                                onClick={() => setIsOpen(!isOpen)}
-                                className="inline-flex items-center justify-center p-2 text-zinc-400 hover:text-accent-300 focus:outline-none focus:text-white md:hidden"
-                            >
-                                <svg
-                                    className="w-6 h-6"
-                                    stroke="currentColor"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                >
-                                    <path
-                                        className={isOpen ? 'hidden' : 'inline-flex'}
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="2"
-                                        d="M4 6h16M4 12h16M4 18h16"
-                                    ></path>
-                                    <path
-                                        className={isOpen ? 'inline-flex' : 'hidden'}
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="2"
-                                        d="M6 18L18 6M6 6l12 12"
-                                    ></path>
-                                </svg>
-
-                            </button>
-                        </div>
-                        <nav
-                            className={`${isOpen ? 'flex' : 'hidden'
-                                } md:flex md:items-end justify-center md:flex-row`}
-                        >
-                            <ul className="space-y-8 list-none text-sm text-white md:space-y-0 md:ml-auto items-center md:inline-flex justify-center text-center md:text-left gap-3 lg:gap-6">
-                                <li>
-                                    <Link href="/#services" className="hover:text-accent-400 zoom-on-hover">
-                                        Services
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/#team" className="hover:text-accent-400 zoom-on-hover">
-                                        Team
-                                    </Link>
-                                </li>
-
-                                <li>
-                                    <Link href="/Contact" className="hover:text-accent-400 zoom-on-hover">
-                                        Contact
-                                    </Link>
-                                </li>
-
-
-                            </ul>
-                        </nav>
-                    </div>
+        <header className={`fixed w-full z-50 transition duration-300 ease-in-out ${isScrolled ? 'bg-blue-100 shadow-lg' : 'bg-transparent'}`}>
+            <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+                <div className="flex lg:flex-1">
+                    <span className="sr-only">Logo</span>
+                    <Image
+                        src="/logos/cottonsandcolors.png"
+                        alt="Logo"
+                        width={150}
+                        height={150}
+                    />
                 </div>
-            </div>
-        </div>
-
+                <div className="flex lg:hidden">
+                    <button
+                        type="button"
+                        className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+                        onClick={() => setMobileMenuOpen(true)}
+                    >
+                        <span className="sr-only">Open main menu</span>
+                        <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+                    </button>
+                </div>
+                <div className="hidden lg:flex lg:gap-x-12">
+                    {navigation.map((item) => (
+                        <Link
+                            key={item.name}
+                            to={item.href}
+                            smooth={true}
+                            duration={500}
+                            className="text-sm font-semibold leading-6 text-gray-900 cursor-pointer"
+                        >
+                            {item.name}
+                        </Link>
+                    ))}
+                </div>
+            </nav>
+            <Dialog className="lg:hidden" open={mobileMenuOpen} onClose={() => setMobileMenuOpen(false)}>
+                <div className="fixed inset-0 z-10" />
+                <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                    <div className="flex items-center justify-between">
+                        <a href="#" className="-m-1.5 p-1.5">
+                            <span className="sr-only">Your Company</span>
+                            <img
+                                className="h-8 w-auto"
+                                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                                alt=""
+                            />
+                        </a>
+                        <button
+                            type="button"
+                            className="-m-2.5 rounded-md p-2.5 text-gray-700"
+                            onClick={() => setMobileMenuOpen(false)}
+                        >
+                            <span className="sr-only">Close menu</span>
+                            <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                        </button>
+                    </div>
+                    <div className="mt-6 flow-root">
+                        <div className="-my-6 divide-y divide-gray-500/10">
+                            <div className="space-y-2 py-6">
+                                {navigation.map((item) => (
+                                    <Link
+                                        key={item.name}
+                                        to={item.href}
+                                        smooth={true}
+                                        duration={500}
+                                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                        onClick={() => setMobileMenuOpen(false)}
+                                    >
+                                        {item.name}
+                                    </Link>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </Dialog.Panel>
+            </Dialog>
+        </header>
     );
-};
-
-export default NavBar;
+}

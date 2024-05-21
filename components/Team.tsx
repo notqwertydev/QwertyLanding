@@ -1,106 +1,76 @@
 "use client";
 import React from 'react';
-import { AnimatePresence, motion, stagger, useAnimate } from "framer-motion";
-
-import { InView } from 'react-intersection-observer';
-
-
-
-
-
-const TeamMember = ({ name, role, imageUrl }) => {
-    return (
-        <li>
-            <InView >
-                {({ inView, ref }) => (
-                    <motion.div
-                        ref={ref}
-                        initial={{
-                            scale: 0.2,
-                            y: 120,
-                            opacity: 0,
-                        }}
-                        animate={inView ? { scale: 1, y: 0, opacity: 1 } : {}}
-                        transition={{
-                            type: "spring",
-                            stiffness: 330,
-                            damping: 35,
-                        }}
-
-
-
-                        className="space-y-4">
-                        <img
-                            alt=""
-                            className="mx-auto h-20 lg:h-24 lg:w-24 rounded-full w-20 object-cover"
-                            src={imageUrl}
-
-                        />
-                        <div className="space-y-2">
-                            <div>
-                                <h3 className="text-white font-medium text-base">{name}</h3>
-                                <p className="text-sm text-zinc-400 mt-4 font-display">{role}</p>
-                            </div>
-                        </div>
-                    </motion.div>)}
-                    </InView>
-        </li>
-    );
-};
-
+import { FaNewspaper, FaCar, FaHeadphones, FaVideo, FaCertificate, FaPencilAlt, FaUsers, FaMobileAlt } from 'react-icons/fa';
 
 const TeamSection = () => {
-    const teamMembers = [
+    const services = [
         {
-            name: 'Michel',
-            role: 'Co-Founder',
-            imageUrl: '/team/Michel.jpg',
+            icon: FaNewspaper,
+            title: "Competitive Market Prices:",
+            description: "The whole production process is made In House. This allows us to provide Unbeatable prices for Top Quality Uniforms."
         },
         {
-            name: 'Ryan',
-            role: 'Co-Founder',
-            imageUrl: '/team/Ryan.jpg',
+            icon: FaCar,
+            title: "Short Notice And Same Day Delivery:",
+            description: "We process orders very quickly. Same Day Delivery is available for regular items from our catalogue, subject to terms & conditions."
         },
         {
-            name: 'Karim',
-            role: 'Co-Founder',
-            imageUrl: '/team/Karim.jpg',
+            icon: FaHeadphones,
+            title: "Decorative Support:",
+            description: "Our team of highly skilled designers will ensure you make the right choice of garment and customisation. We make sure your Logo will be as elegant as possible."
         },
-
-        // Add other team members here
+        {
+            icon: FaVideo,
+            title: "The Live! Concept:",
+            description: "Immerse yourselves in our Live! retail showroom, where anything can be embroidered on the Spot, from Caps & Hats to T-shirts, Polo Shirts & Hoodies."
+        },
+        {
+            icon: FaCertificate,
+            title: "Top Quality Garments:",
+            description: "We ensure the best quality garments. All catalogue products meet OEKO-TEX Standard 100."
+        },
+        {
+            icon: FaPencilAlt,
+            title: "Embroidery Specialists:",
+            description: "Our years of experience in the embroidery field reflect in our top quality and precise embroidery. We are very generous with stitch count and embroidery positions."
+        },
+        {
+            icon: FaUsers,
+            title: "Customer Satisfaction:",
+            description: "We commit to customer needs to guarantee every order is as per their expectations. Assistance to our customers starts from the meeting point until after-sales service."
+        },
+        {
+            icon: FaMobileAlt,
+            title: "24/7 Orders",
+            description: "We are here 24/7 to receive your orders. Just get in touch or leave a message on our website!"
+        }
     ];
-
     return (
-        <section className="lg:p-8 mt-4" id='team'>
-            <div className="mx-auto  py-24 lg:px-16 md:px-12 px-8 xl:px-36 items-center lg:py-24 relative w-full  rounded-[3rem]">
-                <div className="mx-auto max-w-2xl lg:mx-0 pb-12 border-b border-white/10">
-                    <span className="text-white">Our team</span>
-                    <h2 className="text-3xl mt-6 tracking-tighter font-light lg:text-4xl text-white">
-                        For founders,
-                        by founders
-                        <br></br>
-                        <span className="md:block text-zinc-300">
-                            Innovation crafted with expert care.
-                        </span>
-                    </h2>
+        <section id="why-us" className="py-12 bg-white">
+            <div className="relative mt-7 isolate overflow-hidden bg-white rounded-lg">
+            <h2 className="text-5xl mb-3 font-bold tracking-tight text-black">Why us?</h2>
+            <div className="container mx-auto px-4">
+                <div className="text-center mb-12">
+                
+                    <div className="mt-2 w-24 h-1"></div>
                 </div>
-                <ul
-                    role="list"
-                    className="mx-auto mt-20 grid max-w-2xl grid-cols-3 gap-x-8 gap-y-16 text-center sm:grid-cols-3 md:grid-cols-3 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-3"
-                >
-                    {teamMembers.map((member, index) => (
-                        <TeamMember
-                            key={index}
-                            name={member.name}
-                            role={member.role}
-                            imageUrl={member.imageUrl}
-                        />
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
+                    {services.map((service, index) => (
+                        <div key={index} className="flex items-start">
+                            <div className="w-12 h-12 flex items-center justify-center  text-blue rounded-full mr-4">
+                                <service.icon className="text-2xl text-red-600" />
+                            </div>
+                            <div>
+                                <h4 className="text-xl text-blue-600 font-bold">{service.title}</h4>
+                                <p className="mt-2 text-gray-600">{service.description}</p>
+                            </div>
+                        </div>
                     ))}
-                </ul>
+                </div>
+            </div>
             </div>
         </section>
     );
 };
 
 export default TeamSection;
-
